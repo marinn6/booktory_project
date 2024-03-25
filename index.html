@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booktory</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/7e2e8aa629.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <header class="header" id="header">Booktory</header>
+        <div class="book-list-container">
+            <ul class="book-list" id="book-list">
+                <li class="book">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/5/52/The_Four_Agreements.jpeg" alt="the four agreements book cover">
+                    <div class="book__info">
+                        <p class="title">Title</p>
+                        <p class="author">Author</p>
+                        <p class="stock">In Stock</p>
+                        <p class="price"><strong>Price</strong></p>
+                    </div>
+                    <button class="trash">
+                        <i class="fa-regular fa-trash-can"></i>
+                        </button>
+                </li>
+            </ul>
+
+        </div>
+        <div class="right">
+        <form class="form" id="form">
+            <input type="text" class="form__input" placeholder="Title">
+            <input type="text" class="form__input" placeholder="Author">
+            <input type="text" class="form__input" placeholder="Image URL">
+            <input type="text" class="form__input" placeholder="Price">
+            <select name="Stock" id="Stock">
+                <option value="In stock">In Stock</option>
+                <option class="out-of-stock" value="Out of Stock">Out of Stock</option>
+            </select>
+        <button>Add Book</button>
+        </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <article class="book-info__book1">
+    <img src="" alt="" class="img1">
+    <p class="title1">One Hundred Years of Solitude</p>
+    <p class="author1">Gabriel García Márquez
+    </p>
+    <p class="price1">$30.00</p>
+</article>
+<article class="book-info__book2">
+    <img src="" alt="" class="img2">
+    <p class="title1">Principles</p>
+    <p class="author1">Ray Dalio
+    </p>
+    <p class="price1">$18.99</p>
+</article>
+<article class="book-info__book3">
+    <img src="" alt="" class="img3">
+    <p class="title1">The Power of Now</p>
+    <p class="author1">Eckhart Tolle
+    </p>
+    <p class="price1">$15.00</p>
+</article>
+<article class="book-info__book4">
+    <img src="" alt="" class="img4">
+    <p class="title1">One Hundred Years of Solitude</p>
+    <p class="author1">Gabriel García Márquez
+    </p>
+    <p class="price1">$30.00</p>
+</article> -->
+
+
+<!-- Questions:
+-How to have the text remove from the format once it Is submitted?
+-How to make the trash bin work to remove the book?
+-How to have the books saved into the inventory list and keep it saved even when window gets closed, it will still save the books added
+-How to make the stock availability turn red when a book is out of stock? -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

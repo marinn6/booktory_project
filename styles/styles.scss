@@ -1,0 +1,183 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 242, 234);
+    display: grid;
+    // border: 3px solid black;
+    grid-template-columns:  1fr 2fr 2fr;
+    box-sizing: border-box;
+}
+
+.header {
+    color: navy;
+    font-size: 2.3em;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    padding-bottom: 34px;
+    padding-right: 25px;
+    padding-left: 60px;
+}
+
+.book-list-container {
+    // border: 3px solid rgb(44, 141, 3);
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.right {
+    border: 3px solid rgb(218, 128, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+
+.book-list {
+    max-height: 100vh;
+    width: 100%;
+    border: 3px solid orange;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    padding-left: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+    grid-template-rows: auto;
+    margin-top: 0;
+
+
+    // width: 100%;
+    // // border-right: 1px solid $primary-color;;
+    // display: grid;
+    // grid-template-rows: auto;
+    // max-height: 100vh;
+    // overflow-y: auto;
+    // box-sizing: border-box;
+    // padding-left: 10px;
+    // padding-right: 80px;
+}
+
+.book {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "img info trash";
+    border-bottom: 1.5px solid gray;
+    height: 128px;
+    width: 360px;
+    align-items: center;
+
+
+    img {
+        // border: 3px solid purple;
+        height: 90px;
+        padding-bottom: 8px;
+        grid-area: img;
+       }
+    
+    &__info {
+        // border: 2px solid yellow;
+        color: rgb(1, 1, 90);
+        height: 100px;
+        grid-area: info;
+        margin-left: 10px;
+       
+    }
+
+    .title {
+       font-size: 18px; 
+       margin-top: 3px;
+       margin-bottom: 8px;
+    }
+
+    .author {
+        font-size: 12px;
+        margin: -5px 0px;
+    }
+
+    .stock {
+        border: 1px solid green;
+        border-radius: 8px;
+        background: green;
+        color: white;
+        font-size: 8px;
+        padding: 2px 2px;
+        width: 5.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .price {
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    
+   }
+
+   .trash {
+    // border: 2px solid blue;
+    height: fit-content;
+    grid-area: trash;
+    font-size: 18px;
+    background: 0;
+    border: none;
+   }
+
+
+.form {
+    // border: 3px solid rgb(133, 6, 156);
+    display: grid;
+    grid-auto-flow: row; //automatically puts each line of input in a row
+    gap: 24px;
+    width: 300px;
+    justify-content: center;
+    
+    
+    &__input {
+        width: 200px;
+        border: none;
+        border-bottom: 2px solid navy;
+        background: none; //gets ride of the white background for each input
+        padding-bottom: 6px; //adds padding between placeholder text and the border-bottom
+        
+    }
+
+    select {
+        background: none;
+        border: none;
+        border-bottom: 2px solid navy;
+    }
+
+    button {
+        border: solid navy;
+        background-color: rgb(0, 0, 87);
+        color: white;
+        border-radius: 18px; //px helps to round the corners and percentage can lead to a circle.
+        padding: 8px;
+        width: 170px;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+    }
+
+ 
+}
